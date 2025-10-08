@@ -4,3 +4,5 @@ djangorestframework==3.15.2
 pytz==2024.2
 sqlparse==0.5.2
 webcolors==24.11.1
+djoser==2.3.3
+djangorestframework_simplejwt==5.5.1

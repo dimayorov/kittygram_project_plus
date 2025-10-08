@@ -1,7 +1,8 @@
 from rest_framework import viewsets
+from djoser.views import UserViewSet
 
 from .models import Cat, Owner
-from .serializers import CatSerializer, OwnerSerializer
+from .serializers import CatSerializer, CustomUserSerializer, OwnerSerializer
 
 
 class CatViewSet(viewsets.ModelViewSet):
@@ -12,3 +13,7 @@ class CatViewSet(viewsets.ModelViewSet):
 class OwnerViewSet(viewsets.ModelViewSet):
     queryset = Owner.objects.all()
     serializer_class = OwnerSerializer
+
+
+class CustomUserViewSet(UserViewSet):
+    ...
